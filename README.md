@@ -1,11 +1,9 @@
 Temperatur Sensoren auslsesen
 
 Benötigte Hardware:
-Raspberry PI
-Raspberry ZigBee Adapter
-AQARA Sensoren
-
-Hier werde ich eines Tages alles zusammenschreiben wie das Zusammenspiel der einzelnen Dateien funktioniert.
+   Raspberry PI
+   Raspberry ZigBee Adapter
+   AQARA Sensoren
 
 1. Nach Anbringen des ZigBee Adapters am Raspberry ist die Software zu installieren:
    Details dazu: https://www.dresden-elektronik.de/funktechnik/solutions/wireless-light-control/raspbee/
