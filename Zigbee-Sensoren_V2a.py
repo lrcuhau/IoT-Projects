@@ -139,7 +139,8 @@ if __name__ == '__main__':
            Erreichbar = json1[S1_Temp]['config']['reachable']
            Status = json1[S1_Temp]['config']['on']
            Batterie = json1[S1_Temp]['config']['battery']
-           #Batterie = 0
+           if Batterie is None:
+               Batterie=-1
            Temperatur = json1[S1_Temp]['state']['temperature'] / 100
            Letztupdate = Dateconvert(json1[S1_Temp]['state']['lastupdated'])
            Feuchtigkeit = json1[S1_Feucht]['state']['humidity'] /100
@@ -158,7 +159,8 @@ if __name__ == '__main__':
            Erreichbar = json1[S2_Temp]['config']['reachable']
            Status = json1[S2_Temp]['config']['on']
            Batterie = json1[S2_Temp]['config']['battery']
-           #Batterie = 0
+           if Batterie is None:
+               Batterie=-1
            Temperatur = json1[S2_Temp]['state']['temperature'] / 100
            Letztupdate = Dateconvert(json1[S2_Temp]['state']['lastupdated'])
            Feuchtigkeit = json1[S2_Feucht]['state']['humidity'] /100
@@ -177,7 +179,8 @@ if __name__ == '__main__':
            Erreichbar = json1[S3_Temp]['config']['reachable']
            Status = json1[S3_Temp]['config']['on']
            Batterie = json1[S3_Temp]['config']['battery']
-           #Batterie = 0
+           if Batterie is None:
+               Batterie=-1
            Temperatur = json1[S3_Temp]['state']['temperature'] / 100
            Letztupdate = Dateconvert(json1[S3_Temp]['state']['lastupdated'])
            Feuchtigkeit = json1[S3_Feucht]['state']['humidity'] /100
@@ -197,7 +200,8 @@ if __name__ == '__main__':
            Erreichbar = json1[S4_Temp]['config']['reachable']
            Status = json1[S4_Temp]['config']['on']
            Batterie = json1[S4_Temp]['config']['battery']
-           #Batterie = 0
+           if Batterie is None:
+               Batterie=-1
            Temperatur = json1[S4_Temp]['state']['temperature'] / 100
            Letztupdate = Dateconvert(json1[S4_Temp]['state']['lastupdated'])
            Feuchtigkeit = json1[S4_Feucht]['state']['humidity'] /100
